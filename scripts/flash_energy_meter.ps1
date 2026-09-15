@@ -25,9 +25,9 @@ $commonArgs = @(
     '-s', $openOcdScripts,
     '-f', 'interface/cmsis-dap.cfg',
     '-c', 'transport select swd',
-    '-c', "adapter speed $AdapterKhz",
     '-f', 'target/stm32f4x.cfg',
-    '-c', 'reset_config none'
+    '-c', 'reset_config none',
+    '-c', "adapter speed $AdapterKhz"
 )
 
 if ($ProbeOnly) {
