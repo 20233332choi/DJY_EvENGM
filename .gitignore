@@ -1,0 +1,13 @@
+# PlatformIO/ESP-IDF generated files
+firmware/esp-usb-bridge/.pio/
+firmware/esp-usb-bridge/managed_components/
+firmware/esp-usb-bridge/sdkconfig
+firmware/esp-usb-bridge/sdkconfig.*
+!firmware/esp-usb-bridge/sdkconfig.defaults
+!firmware/esp-usb-bridge/sdkconfig.defaults.*
+
+# Editor and OS files
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

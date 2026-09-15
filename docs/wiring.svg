@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="620" viewBox="0 0 1100 620">
+  <style>
+    text { font-family: Segoe UI, Arial, sans-serif; fill: #18212b; }
+    .title { font-size: 28px; font-weight: 700; }
+    .head { font-size: 20px; font-weight: 700; }
+    .label { font-size: 17px; }
+    .small { font-size: 14px; }
+    .box { fill: #f7f9fb; stroke: #465568; stroke-width: 2; rx: 12; }
+    .swd { stroke: #16835b; stroke-width: 5; fill: none; }
+    .gnd { stroke: #465568; stroke-width: 5; fill: none; }
+    .power { stroke: #d97706; stroke-width: 5; stroke-dasharray: 10 8; fill: none; }
+    .pin { fill: #ffffff; stroke: #465568; stroke-width: 2; }
+  </style>
+  <text x="40" y="48" class="title">DJY Energy Meter SWD Programmer</text>
+  <rect x="45" y="95" width="300" height="400" class="box"/>
+  <text x="75" y="135" class="head">ESP32-S3 DevKitC-1</text>
+  <text x="75" y="185" class="label">GPIO10 · SWCLK</text>
+  <text x="75" y="255" class="label">GPIO8 · SWDIO</text>
+  <text x="75" y="325" class="label">GND</text>
+  <text x="75" y="420" class="small">Native USB/OTG → PC</text>
+  <text x="75" y="448" class="small">CP210x USB(COM8) = ESP 설치 전용</text>
+
+  <rect x="755" y="95" width="300" height="400" class="box"/>
+  <text x="785" y="135" class="head">FSK Energy Meter · J3</text>
+  <circle cx="790" cy="180" r="14" class="pin"/><text x="815" y="186" class="label">6 · SWCLK</text>
+  <circle cx="790" cy="250" r="14" class="pin"/><text x="815" y="256" class="label">7 · SWDIO</text>
+  <circle cx="790" cy="320" r="14" class="pin"/><text x="815" y="326" class="label">4 또는 8 · GND</text>
+  <circle cx="790" cy="390" r="14" class="pin"/><text x="815" y="396" class="label">1 또는 5 · 3V3</text>
+  <text x="785" y="445" class="small" fill="#b42318">실물 PCB의 1번 핀 표시 확인 필수</text>
+
+  <path d="M345 180 H790" class="swd"/><text x="500" y="168" class="small">확인: GPIO10 → J3-6</text>
+  <path d="M345 250 H790" class="swd"/><text x="500" y="238" class="small">확인: GPIO8 → J3-7</text>
+  <path d="M345 320 H790" class="gnd"/><text x="500" y="308" class="small">확인: 공통 GND</text>
+
+  <rect x="395" y="375" width="250" height="85" class="box"/>
+  <text x="420" y="410" class="label">외부 정전압 3.3 V</text>
+  <text x="420" y="438" class="small">한 가지 전원만 사용</text>
+  <path d="M645 417 H710 V390 H790" class="power"/>
+
+  <text x="50" y="550" class="small">초록/회색 실선: 소스와 설정에서 확인 · 주황 점선: 권장 벤치 전원 구성(실물 전류 미검증)</text>
+  <text x="50" y="580" class="small" fill="#b42318">프로그래밍 중 차량, HV 입력, drive cable 연결 금지</text>
+</svg>
