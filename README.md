@@ -51,7 +51,7 @@ Windows PowerShell에서 다음을 실행하면 됩니다.
 .\gui\DJY_EvENGM-GUI.ps1
 ```
 
-또는 프로젝트 폴더의 `run_gui.bat`을 더블클릭하면 됩니다.
+또는 프로젝트 폴더의 `run_gui.bat` 또는 `run_gui.vbs`를 더블클릭하면 됩니다. 둘 다 콘솔창 없이 GUI만 실행합니다.
 
 `연결 확인`으로 먼저 CMSIS-DAP과 STM32를 확인한 뒤 `release 전송`을 클릭합니다. GUI는 USB 연결 즉시 자동 기록하지 않으며, 기록 버튼에 확인창을 표시합니다.
 
