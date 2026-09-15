@@ -41,6 +41,17 @@ ESP 브리지 펌웨어를 다시 설치하려면:
 - `scripts/build_bridge.ps1`: 브리지 재빌드 및 산출물 패키징
 - `scripts/install_bridge.ps1`: ESP 브리지 설치
 - `scripts/flash_energy_meter.ps1`: 연결 시험 또는 Energy Meter 기록
+- `gui/DJY_EvENGM-GUI.ps1`: 연결 확인·무결성 확인·release 전송 GUI
+
+## GUI 실행
+
+Windows PowerShell에서 다음을 실행하면 됩니다.
+
+```powershell
+.\gui\DJY_EvENGM-GUI.ps1
+```
+
+`연결 확인`으로 먼저 CMSIS-DAP과 STM32를 확인한 뒤 `release 전송`을 클릭합니다. GUI는 USB 연결 즉시 자동 기록하지 않으며, 기록 버튼에 확인창을 표시합니다.
 
 ## 검증 경계
 
